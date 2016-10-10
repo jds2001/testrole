@@ -1,0 +1,9 @@
+---
+# tasks file for testrole
+#
+- name: test options
+  command: echo test
+  register: output
+
+- name: debug
+  debug: var=output
